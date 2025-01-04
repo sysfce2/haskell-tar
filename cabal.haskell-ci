@@ -1,2 +1,1 @@
-installed: -directory -unix -bytestring
-haddock: >= 8.6
+installed: -directory -unix -bytestring -filepath -text -process -binary

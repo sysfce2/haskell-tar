@@ -1,3 +1,12 @@
+## 0.6.4.0 Bodigrim <andrew.lelechenko@gmail.com> January 2025
+
+  * Migrate internals of packing / unpacking to `OsPath`.
+  * Use `getDirectoryContentsRecursive` from `directory-ospath-streaming`.
+
+## 0.6.3.0 Bodigrim <andrew.lelechenko@gmail.com> June 2024
+
+  * [Speed up `deserialize`](https://github.com/haskell/tar/pull/95).
+
 ## 0.6.2.0 Bodigrim <andrew.lelechenko@gmail.com> March 2024
 
   * Fix issues with Unicode support in filenames.
@@ -36,6 +45,7 @@
   * [`cabal-install`](https://github.com/haskell/cabal/commit/51e6483f95ecb4f395dce36e47af296902a75143)
   * [`ghcup`](https://github.com/haskell/ghcup-hs/commit/6ae312c1f9dd054546e4afe4c969c37cd54b09a9)
   * [`hackage-server`](https://github.com/haskell/hackage-server/commit/6b71d1659500aba50b6a1e48aa53039046720af8)
+  * [`hedgehog-extras`](https://github.com/input-output-hk/hedgehog-extras/commit/1d4468ce4e74e7a4b3c1fec5c1b21360051a3e72)
 
   Bug fixes:
 

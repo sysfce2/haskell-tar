@@ -22,6 +22,9 @@
 -- > import qualified Codec.Archive.Tar.Entry as Tar
 --
 -----------------------------------------------------------------------------
+
+{-# LANGUAGE CPP #-}
+
 module Codec.Archive.Tar.Entry (
 
   -- * Tar entry and associated types
@@ -58,6 +61,9 @@ module Codec.Archive.Tar.Entry (
   packFileEntry,
   packDirectoryEntry,
   packSymlinkEntry,
+#if __GLASGOW_HASKELL__ >= 908
+  {-# DEPRECATED "The re-export will be removed in future releases of tar, use directory-ospath-streaming package directly " #-}
+#endif
   getDirectoryContentsRecursive,
 
   -- * TarPath type
@@ -77,3 +83,4 @@ module Codec.Archive.Tar.Entry (
 
 import Codec.Archive.Tar.Types
 import Codec.Archive.Tar.Pack
+import System.Directory.OsPath.Streaming (getDirectoryContentsRecursive)
